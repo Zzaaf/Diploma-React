@@ -1,30 +1,30 @@
 import React from 'react';
-import {Container, Row, Col} from 'reactstrap';
+import {Row} from 'reactstrap';
 import {Link} from 'react-router-dom';
+import Logo from '../../logo/Logo.svg';
+
 
 const Header = () => {
     return (
-        <Container>
-            <Row>
-                <Col lg="6">
-                    <header>
-                        <ul class="header">
-                            <li class="header__item">
+        <Row>
+            <div className="col-lg-6">
+                <header>
+                        <ul className="header">
+                            <li className="header__item">
                                 <Link to='/'>
-                                    <img src="img/Logo.svg" alt="logo" />>
+                                    <img src={Logo} alt="logo"></img>
                                 </Link>
                             </li>
-                            <li class="header__item">
-                                <Link to='/'>Our coffee</Link>
+                            <li className="header__item">
+                                <Link to='/coffee/'>Our coffee</Link>
                             </li>
-                            <li class="header__item">
-                                <Link to='/'>For your pleasure</Link>
+                            <li className="header__item">
+                                <Link to='/pleasure/'>For your pleasure</Link>
                             </li>
                         </ul>
                     </header>
-                </Col>
-            </Row>
-        </Container>
+            </div>
+        </Row>
     );
 };
 
