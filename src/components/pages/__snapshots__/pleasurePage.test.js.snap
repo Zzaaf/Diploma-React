@@ -1,0 +1,1074 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <PleasurePage/> Testing snap & state PleasurePage has rendered correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PleasurePage />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <div
+          className="pleasure"
+        >
+          <Container
+            tag="div"
+          >
+            <Header />
+            <h1
+              className="title-big"
+            >
+              For your pleasure
+            </h1>
+          </Container>
+        </div>,
+        <section
+          className="shop"
+        >
+          <Container
+            tag="div"
+          >
+            <Row
+              tag="div"
+            >
+              <div
+                className="col-lg-4 offset-2"
+              >
+                <img
+                  alt="girl"
+                  className="shop__girl"
+                  src="coffee_cup.jpg"
+                />
+              </div>
+              <div
+                className="col-lg-4"
+              >
+                <div
+                  className="title"
+                >
+                  About our goods
+                </div>
+                <img
+                  alt="Beans logo"
+                  className="beanslogo"
+                  src="Beans_logo_dark.svg"
+                />
+                <div
+                  className="shop__text"
+                >
+                  Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
+                  <br />
+                  <br />
+                  Afraid at highly months do things on at. Situation recommend objection do intention
+                  <br />
+                  so questions. 
+                  <br />
+                  As greatly removed calling pleased improve an. Last ask him cold feel
+                  <br />
+                  met spot shy want. Children me laughing we prospect answered followed. At it went
+                  <br />
+                  is song that held help face.
+                </div>
+              </div>
+            </Row>
+            <div
+              className="line"
+            />
+            <GoodsList />
+          </Container>
+        </section>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Container
+            tag="div"
+          >
+            <Header />
+            <h1
+              className="title-big"
+            >
+              For your pleasure
+            </h1>
+          </Container>,
+          "className": "pleasure",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Header />,
+              <h1
+                className="title-big"
+              >
+                For your pleasure
+              </h1>,
+            ],
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "For your pleasure",
+                "className": "title-big",
+              },
+              "ref": null,
+              "rendered": "For your pleasure",
+              "type": "h1",
+            },
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Container
+            tag="div"
+          >
+            <Row
+              tag="div"
+            >
+              <div
+                className="col-lg-4 offset-2"
+              >
+                <img
+                  alt="girl"
+                  className="shop__girl"
+                  src="coffee_cup.jpg"
+                />
+              </div>
+              <div
+                className="col-lg-4"
+              >
+                <div
+                  className="title"
+                >
+                  About our goods
+                </div>
+                <img
+                  alt="Beans logo"
+                  className="beanslogo"
+                  src="Beans_logo_dark.svg"
+                />
+                <div
+                  className="shop__text"
+                >
+                  Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
+                  <br />
+                  <br />
+                  Afraid at highly months do things on at. Situation recommend objection do intention
+                  <br />
+                  so questions. 
+                  <br />
+                  As greatly removed calling pleased improve an. Last ask him cold feel
+                  <br />
+                  met spot shy want. Children me laughing we prospect answered followed. At it went
+                  <br />
+                  is song that held help face.
+                </div>
+              </div>
+            </Row>
+            <div
+              className="line"
+            />
+            <GoodsList />
+          </Container>,
+          "className": "shop",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Row
+                tag="div"
+              >
+                <div
+                  className="col-lg-4 offset-2"
+                >
+                  <img
+                    alt="girl"
+                    className="shop__girl"
+                    src="coffee_cup.jpg"
+                  />
+                </div>
+                <div
+                  className="col-lg-4"
+                >
+                  <div
+                    className="title"
+                  >
+                    About our goods
+                  </div>
+                  <img
+                    alt="Beans logo"
+                    className="beanslogo"
+                    src="Beans_logo_dark.svg"
+                  />
+                  <div
+                    className="shop__text"
+                  >
+                    Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
+                    <br />
+                    <br />
+                    Afraid at highly months do things on at. Situation recommend objection do intention
+                    <br />
+                    so questions. 
+                    <br />
+                    As greatly removed calling pleased improve an. Last ask him cold feel
+                    <br />
+                    met spot shy want. Children me laughing we prospect answered followed. At it went
+                    <br />
+                    is song that held help face.
+                  </div>
+                </div>
+              </Row>,
+              <div
+                className="line"
+              />,
+              <GoodsList />,
+            ],
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="col-lg-4 offset-2"
+                  >
+                    <img
+                      alt="girl"
+                      className="shop__girl"
+                      src="coffee_cup.jpg"
+                    />
+                  </div>,
+                  <div
+                    className="col-lg-4"
+                  >
+                    <div
+                      className="title"
+                    >
+                      About our goods
+                    </div>
+                    <img
+                      alt="Beans logo"
+                      className="beanslogo"
+                      src="Beans_logo_dark.svg"
+                    />
+                    <div
+                      className="shop__text"
+                    >
+                      Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
+                      <br />
+                      <br />
+                      Afraid at highly months do things on at. Situation recommend objection do intention
+                      <br />
+                      so questions. 
+                      <br />
+                      As greatly removed calling pleased improve an. Last ask him cold feel
+                      <br />
+                      met spot shy want. Children me laughing we prospect answered followed. At it went
+                      <br />
+                      is song that held help face.
+                    </div>
+                  </div>,
+                ],
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="girl"
+                      className="shop__girl"
+                      src="coffee_cup.jpg"
+                    />,
+                    "className": "col-lg-4 offset-2",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "girl",
+                      "className": "shop__girl",
+                      "src": "coffee_cup.jpg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="title"
+                      >
+                        About our goods
+                      </div>,
+                      <img
+                        alt="Beans logo"
+                        className="beanslogo"
+                        src="Beans_logo_dark.svg"
+                      />,
+                      <div
+                        className="shop__text"
+                      >
+                        Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
+                        <br />
+                        <br />
+                        Afraid at highly months do things on at. Situation recommend objection do intention
+                        <br />
+                        so questions. 
+                        <br />
+                        As greatly removed calling pleased improve an. Last ask him cold feel
+                        <br />
+                        met spot shy want. Children me laughing we prospect answered followed. At it went
+                        <br />
+                        is song that held help face.
+                      </div>,
+                    ],
+                    "className": "col-lg-4",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "About our goods",
+                        "className": "title",
+                      },
+                      "ref": null,
+                      "rendered": "About our goods",
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "Beans logo",
+                        "className": "beanslogo",
+                        "src": "Beans_logo_dark.svg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.",
+                          <br />,
+                          <br />,
+                          "Afraid at highly months do things on at. Situation recommend objection do intention",
+                          <br />,
+                          "so questions. ",
+                          <br />,
+                          "As greatly removed calling pleased improve an. Last ask him cold feel",
+                          <br />,
+                          "met spot shy want. Children me laughing we prospect answered followed. At it went",
+                          <br />,
+                          "is song that held help face.",
+                        ],
+                        "className": "shop__text",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        "Afraid at highly months do things on at. Situation recommend objection do intention",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        "so questions. ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        "As greatly removed calling pleased improve an. Last ask him cold feel",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        "met spot shy want. Children me laughing we prospect answered followed. At it went",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        "is song that held help face.",
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "line",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": "section",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <div
+            className="pleasure"
+          >
+            <Container
+              tag="div"
+            >
+              <Header />
+              <h1
+                className="title-big"
+              >
+                For your pleasure
+              </h1>
+            </Container>
+          </div>,
+          <section
+            className="shop"
+          >
+            <Container
+              tag="div"
+            >
+              <Row
+                tag="div"
+              >
+                <div
+                  className="col-lg-4 offset-2"
+                >
+                  <img
+                    alt="girl"
+                    className="shop__girl"
+                    src="coffee_cup.jpg"
+                  />
+                </div>
+                <div
+                  className="col-lg-4"
+                >
+                  <div
+                    className="title"
+                  >
+                    About our goods
+                  </div>
+                  <img
+                    alt="Beans logo"
+                    className="beanslogo"
+                    src="Beans_logo_dark.svg"
+                  />
+                  <div
+                    className="shop__text"
+                  >
+                    Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
+                    <br />
+                    <br />
+                    Afraid at highly months do things on at. Situation recommend objection do intention
+                    <br />
+                    so questions. 
+                    <br />
+                    As greatly removed calling pleased improve an. Last ask him cold feel
+                    <br />
+                    met spot shy want. Children me laughing we prospect answered followed. At it went
+                    <br />
+                    is song that held help face.
+                  </div>
+                </div>
+              </Row>
+              <div
+                className="line"
+              />
+              <GoodsList />
+            </Container>
+          </section>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Container
+              tag="div"
+            >
+              <Header />
+              <h1
+                className="title-big"
+              >
+                For your pleasure
+              </h1>
+            </Container>,
+            "className": "pleasure",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Header />,
+                <h1
+                  className="title-big"
+                >
+                  For your pleasure
+                </h1>,
+              ],
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "For your pleasure",
+                  "className": "title-big",
+                },
+                "ref": null,
+                "rendered": "For your pleasure",
+                "type": "h1",
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Container
+              tag="div"
+            >
+              <Row
+                tag="div"
+              >
+                <div
+                  className="col-lg-4 offset-2"
+                >
+                  <img
+                    alt="girl"
+                    className="shop__girl"
+                    src="coffee_cup.jpg"
+                  />
+                </div>
+                <div
+                  className="col-lg-4"
+                >
+                  <div
+                    className="title"
+                  >
+                    About our goods
+                  </div>
+                  <img
+                    alt="Beans logo"
+                    className="beanslogo"
+                    src="Beans_logo_dark.svg"
+                  />
+                  <div
+                    className="shop__text"
+                  >
+                    Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
+                    <br />
+                    <br />
+                    Afraid at highly months do things on at. Situation recommend objection do intention
+                    <br />
+                    so questions. 
+                    <br />
+                    As greatly removed calling pleased improve an. Last ask him cold feel
+                    <br />
+                    met spot shy want. Children me laughing we prospect answered followed. At it went
+                    <br />
+                    is song that held help face.
+                  </div>
+                </div>
+              </Row>
+              <div
+                className="line"
+              />
+              <GoodsList />
+            </Container>,
+            "className": "shop",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Row
+                  tag="div"
+                >
+                  <div
+                    className="col-lg-4 offset-2"
+                  >
+                    <img
+                      alt="girl"
+                      className="shop__girl"
+                      src="coffee_cup.jpg"
+                    />
+                  </div>
+                  <div
+                    className="col-lg-4"
+                  >
+                    <div
+                      className="title"
+                    >
+                      About our goods
+                    </div>
+                    <img
+                      alt="Beans logo"
+                      className="beanslogo"
+                      src="Beans_logo_dark.svg"
+                    />
+                    <div
+                      className="shop__text"
+                    >
+                      Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
+                      <br />
+                      <br />
+                      Afraid at highly months do things on at. Situation recommend objection do intention
+                      <br />
+                      so questions. 
+                      <br />
+                      As greatly removed calling pleased improve an. Last ask him cold feel
+                      <br />
+                      met spot shy want. Children me laughing we prospect answered followed. At it went
+                      <br />
+                      is song that held help face.
+                    </div>
+                  </div>
+                </Row>,
+                <div
+                  className="line"
+                />,
+                <GoodsList />,
+              ],
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="col-lg-4 offset-2"
+                    >
+                      <img
+                        alt="girl"
+                        className="shop__girl"
+                        src="coffee_cup.jpg"
+                      />
+                    </div>,
+                    <div
+                      className="col-lg-4"
+                    >
+                      <div
+                        className="title"
+                      >
+                        About our goods
+                      </div>
+                      <img
+                        alt="Beans logo"
+                        className="beanslogo"
+                        src="Beans_logo_dark.svg"
+                      />
+                      <div
+                        className="shop__text"
+                      >
+                        Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
+                        <br />
+                        <br />
+                        Afraid at highly months do things on at. Situation recommend objection do intention
+                        <br />
+                        so questions. 
+                        <br />
+                        As greatly removed calling pleased improve an. Last ask him cold feel
+                        <br />
+                        met spot shy want. Children me laughing we prospect answered followed. At it went
+                        <br />
+                        is song that held help face.
+                      </div>
+                    </div>,
+                  ],
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        alt="girl"
+                        className="shop__girl"
+                        src="coffee_cup.jpg"
+                      />,
+                      "className": "col-lg-4 offset-2",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "girl",
+                        "className": "shop__girl",
+                        "src": "coffee_cup.jpg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <div
+                          className="title"
+                        >
+                          About our goods
+                        </div>,
+                        <img
+                          alt="Beans logo"
+                          className="beanslogo"
+                          src="Beans_logo_dark.svg"
+                        />,
+                        <div
+                          className="shop__text"
+                        >
+                          Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
+                          <br />
+                          <br />
+                          Afraid at highly months do things on at. Situation recommend objection do intention
+                          <br />
+                          so questions. 
+                          <br />
+                          As greatly removed calling pleased improve an. Last ask him cold feel
+                          <br />
+                          met spot shy want. Children me laughing we prospect answered followed. At it went
+                          <br />
+                          is song that held help face.
+                        </div>,
+                      ],
+                      "className": "col-lg-4",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "About our goods",
+                          "className": "title",
+                        },
+                        "ref": null,
+                        "rendered": "About our goods",
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "Beans logo",
+                          "className": "beanslogo",
+                          "src": "Beans_logo_dark.svg",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.",
+                            <br />,
+                            <br />,
+                            "Afraid at highly months do things on at. Situation recommend objection do intention",
+                            <br />,
+                            "so questions. ",
+                            <br />,
+                            "As greatly removed calling pleased improve an. Last ask him cold feel",
+                            <br />,
+                            "met spot shy want. Children me laughing we prospect answered followed. At it went",
+                            <br />,
+                            "is song that held help face.",
+                          ],
+                          "className": "shop__text",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {},
+                            "ref": null,
+                            "rendered": null,
+                            "type": "br",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {},
+                            "ref": null,
+                            "rendered": null,
+                            "type": "br",
+                          },
+                          "Afraid at highly months do things on at. Situation recommend objection do intention",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {},
+                            "ref": null,
+                            "rendered": null,
+                            "type": "br",
+                          },
+                          "so questions. ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {},
+                            "ref": null,
+                            "rendered": null,
+                            "type": "br",
+                          },
+                          "As greatly removed calling pleased improve an. Last ask him cold feel",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {},
+                            "ref": null,
+                            "rendered": null,
+                            "type": "br",
+                          },
+                          "met spot shy want. Children me laughing we prospect answered followed. At it went",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {},
+                            "ref": null,
+                            "rendered": null,
+                            "type": "br",
+                          },
+                          "is song that held help face.",
+                        ],
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "line",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "section",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -1,11 +1,20 @@
 import React, {Component} from 'react';
 import {Row} from 'reactstrap';
 import Spinner from '../spinner';
+import ErrorMessage from '../errorMessage';
 
 export default class CoffeeList extends Component {
     state = {
         posts: [],
-        loading: false
+        loading: true,
+        typeError: '',
+        fatalError: false
+    }
+    componentDidCatch() {
+        this.setState({
+            fatalError: true,
+            typeError: 'fatal'
+        })
     }
     componentDidUpdate(prevProps) {
         if(this.props.posts !== prevProps.posts) {
@@ -33,10 +42,14 @@ export default class CoffeeList extends Component {
         this.setState({posts: newPosts});
         setTimeout(() => {
             this.setState({loading: false});
-        }, 300)
+        }, 150)
      }
 
     render() {
+        const { typeError } = this.state;
+        if(this.state.fatalError) {
+            return <Row><ErrorMessage typeError={typeError}/></Row>
+        }
         if (this.state.loading === true) {
             return (
                     <Row>

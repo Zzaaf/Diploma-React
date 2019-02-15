@@ -1,41 +1,59 @@
 import React, {Component} from 'react';
 import {Container, Row} from 'reactstrap';
-import CoffeeService from '../../services/coffeeService';
 import Spinner from '../spinner';
+import ErrorMessage from '../errorMessage';
 
 import BeansLogoDark from '../../logo/Beans_logo_dark.svg';
 
 export default class CoffeeItem extends Component {
-    coffeeService = new CoffeeService();
     state = {
         post: [],
-        loading: false
+        loading: true,
+        error: false,
+        typeError: '',
+        fatalError: false
+    }
+    componentDidCatch() {
+        this.setState({
+            fatalError: true,
+            typeError: 'fatal'
+        })
     }
     componentDidMount() {
         this.setState({loading: true});
-        this.coffeeService.getAllCoffee()
-        .then(this.onCoffeeLoaded);
+        const {getData} = this.props;
+        getData()
+        .then(this.onCoffeeLoaded)
+        .catch(this.onError);
+    }
+    onError = (err) => {
+        this.setState({
+            error: true,
+            loading: false,
+            typeError: err.message
+        });
     }
     onCoffeeLoaded = (posts) => {
         let checkName = this.props.coffeeName;
         for ( let i = 0; i < posts.length; i++) {
             if ( checkName === posts[i].name.replace(/ /g, "-")) {
-                let newPost = posts[i];
+                let newPost = posts[i],
+                    {url, name, country = "China", description = "Unfortunately there's no description for this item"} = posts[i];
                 this.setState({post: 
                     <Row>
                         <div className="col-lg-5 offset-1">
-                            <img className="shop__girl" src={newPost.url} alt="coffee_item"></img>
+                            <img className="shop__girl" src={url} alt="coffee_item"></img>
                         </div>
                         <div className="col-lg-4">
-                            <div className="title">{newPost.name}</div>
+                            <div className="title">{name}</div>
                             <img className="beanslogo" src={BeansLogoDark} alt="Beans logo"></img>
                             <div className="shop__point">
                                 <span>Country: </span>
-                                {newPost.country}
+                                {country}
                             </div>
                             <div className="shop__point">
                                 <span>Description: </span>
-                                {newPost.description}
+                                {description}
                             </div>
                             <div className="shop__point">
                                 <span>Price: </span>
@@ -63,24 +81,23 @@ export default class CoffeeItem extends Component {
     }
 
     render() {
-        if (this.state.loading === true) {
-            return (
+        const { post, loading, error, typeError } = this.state;
+        if(this.state.fatalError) {
+            return <Container><Row><ErrorMessage typeError={typeError}/></Row></Container>
+        }
+        const content = !(loading || error) ? <>{post}</> : null;
+        const spinner = loading ? <Spinner/> : null;
+        const errorMessage = error ? <ErrorMessage typeError={typeError}/> : null;
+        return (
+            <section className="shop">
                 <Container>
                     <Row>
-                        <Spinner/>
+                        {content}
+                        {spinner}
+                        {errorMessage}
                     </Row>
                 </Container>
-            )
-        } else {
-            return (
-                <section className="shop">
-                    <Container>
-                        <Row>
-                            {this.state.post}
-                        </Row>
-                    </Container>
-                </section>
-            )
-        }
+            </section>
+        )
     }
 }

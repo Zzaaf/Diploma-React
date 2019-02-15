@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Row} from 'reactstrap';
 import CoffeeService from '../../services/coffeeService';
 import CoffeeList from '../coffeeList';
+import ErrorMessage from '../errorMessage';
 
 export default class CoffeeBlock extends Component {
     constructor(props) {
@@ -10,19 +11,30 @@ export default class CoffeeBlock extends Component {
             posts: [],
             term: '',
             filter: '',
-            loading: true,
             error: false,
-            fatalError: false,
-            typeError: ''
+            typeError: '',
+            fatalError: false
         };
         this.buttons = ['Brazil', 'Kenya', 'Columbia'];
         this.onUpdateSearch = this.onUpdateSearch.bind(this);
     }
     coffeeService = new CoffeeService();
-
+    componentDidCatch() {
+        this.setState({
+            fatalError: true,
+            typeError: 'fatal'
+        })
+    }
     componentDidMount() {
         this.coffeeService.getAllCoffee()
-            .then(this.onCoffeeLoaded);
+            .then(this.onCoffeeLoaded)
+            .catch(this.onError);
+    }
+    onError = (err) => {
+        this.setState({
+            error: true,
+            typeError: err.message
+        });
     }
     searchPosts(items, term) {
         if (term.length === 0 ) {
@@ -57,6 +69,10 @@ export default class CoffeeBlock extends Component {
     }
 
     render() {
+        const { posts, term, filter, error, typeError } = this.state;
+        if(this.state.fatalError) {
+            return <Row><ErrorMessage typeError={typeError}/></Row>
+        }
         const buttons = this.buttons.map((label, index) => {
             const {filter} = this.state;
             const active = filter === label;
@@ -69,9 +85,12 @@ export default class CoffeeBlock extends Component {
                     >{label}</button>
             )
             });
-            const {posts, term, filter} = this.state;
             const visiblePosts = this.filterPost(this.searchPosts(posts, term), filter);
-
+            const content = error ? <Row><ErrorMessage typeError={typeError}/></Row> : 
+                <CoffeeList
+                    onCoffeeSelected={(name) => 
+                    this.props.onCoffeeSelected(name)}
+                    posts={visiblePosts}/>;
         return (
             <>
                 <Row>
@@ -98,10 +117,7 @@ export default class CoffeeBlock extends Component {
                         </div>
                     </div>
                 </Row>
-                <CoffeeList
-                    onCoffeeSelected={(name) => 
-                        this.props.onCoffeeSelected(name)}
-                    posts={visiblePosts}/>
+                {content}
             </>
         );
     }

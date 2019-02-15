@@ -2,32 +2,48 @@ import React, {Component} from 'react';
 import {Row} from 'reactstrap';
 import CoffeeService from '../../services/coffeeService';
 import Spinner from '../spinner';
+import ErrorMessage from '../errorMessage';
 
 export default class Bestsellers extends Component {
     constructor(props) {
         super(props);
         this.state = {
             posts: [],
-            loading: false,
+            loading: true,
             error: false,
-            fatalError: false,
-            typeError: ''
+            typeError: '',
+            fatalError: false
         };
     }
     coffeeService = new CoffeeService();
-
+    componentDidCatch() {
+        console.log('fatal');
+        this.setState({
+            fatalError: true,
+            typeError: 'fatal'
+        })
+    }
     componentDidMount() {
         this.setState({loading: true});
         this.coffeeService.getAllBestsellers()
-            .then(this.onBestLoaded);
+            .then(this.onBestLoaded)
+            .catch(this.onError);
     }
-
+    onError = (err) => {
+        this.setState({
+            error: true,
+            loading: false,
+            typeError: err.message
+        });
+    }
     onBestLoaded = (posts) => {
         let newPosts = posts.map((post, index) => {
+            // this.foo.bar = 0;
             return (
                 <div
                     key={index}
-                    className="best__item">
+                    className="best__item"
+                    onClick={() => this.props.onCoffeeSelected(post.name)}>
                     <img src={post.url} alt="coffee"></img>
                     <div className="best__item-title">
                         {post.name}
@@ -43,23 +59,25 @@ export default class Bestsellers extends Component {
     }
 
     render() {
-        if (this.state.loading === true) {
-            return (
-                    <Row>
-                        <Spinner/>
-                    </Row>
-            )
-        } else {
-            return (
-                <Row>
-                    <div className="col-lg-10 offset-lg-1">
-                        <div className="best__wrapper">
-                            {this.state.posts}
-                        </div>
-                    </div>
-                </Row>
-            );
+        const { posts, loading, error, typeError } = this.state;
+        if(this.state.fatalError) {
+            return <Row><ErrorMessage typeError={typeError}/></Row>
         }
+        const content = !(loading || error) ? 
+                <div className="col-lg-10 offset-lg-1">
+                    <div className="best__wrapper">
+                        {posts}
+                    </div>
+                </div> : null;
+        const spinner = loading ? <Spinner/> : null;
+        const errorMessage = error ? <ErrorMessage typeError={typeError}/> : null;
+        return (
+            <Row>
+                {content}
+                {spinner}
+                {errorMessage}
+            </Row>
+        )
     }
 }
 
