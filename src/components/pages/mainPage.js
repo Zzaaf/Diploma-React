@@ -71,7 +71,7 @@ class MainPage extends Component {
                         <Bestsellers
                             onCoffeeSelected={(name) => {
                                 this.props.history.push({
-                                    pathname: `/bestsellers/${name.replace(/ /g, "-")}`
+                                    pathname: `/coffee/${name.replace(/ /g, "-")}`
                                 })
                             }}/>
                     </Container>
