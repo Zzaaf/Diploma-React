@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import img404 from './error404.png';
+import img404 from './error404.jpg';
 import imgDefault from './errorDefault.jpg';
-import imgFatal from './errorFatal.gif';
+import imgFatal from './errorFatal.jpg';
 
 export default class  ErrorMessage extends Component {
 
